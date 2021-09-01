@@ -1,0 +1,50 @@
+#SignInDiv{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgb(51,66,87);
+	background: linear-gradient(180deg, rgba(51,66,87,1) 0%, rgba(71,96,114,1) 100%);
+}
+
+#SignInFormDiv{
+	height: 800px;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #5D8AAB;
+	border-radius: 15px;
+}
+
+#SignInFormDiv > form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: 100px;
+}
+
+#SignInFormDiv > form > p{
+	font-size: 50px;
+	color: white;
+	margin-bottom: 50px;
+}
+
+.SignInFormInput{
+	font-family: inherit;
+	border: 0;
+	border: 2px solid white;
+	border-radius: 15px;
+	outline: 0;
+	font-size: 1.3rem;
+	color: black;
+	height: 40px;
+	width: 250px;
+	padding-left: 10px;
+	background: white;
+	transition: border-color 0.2s;
+	margin: 10px 10px;
+}
