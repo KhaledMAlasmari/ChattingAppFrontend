@@ -6,8 +6,8 @@ import Chat from './Chat/Chat'
 import ChatInterface from '../../interfaces/ChatInterface'
 import UserInterface from '../../interfaces/UserInterface'
 import SidebarHeader from './Sidebar/SidebarHeader'
-import { getUserChats, getUserContacts, isJwtTokenValid } from '../../services/server'
-import { disconnectSocket, initiateSocket } from '../../services/socketClient'
+import { getUserChats, getUserContacts } from '../../services/server'
+import {initiateSocket } from '../../services/socketClient'
 import AddContacts from '../AddContacts/AddContacts'
 
 const Main = (): JSX.Element => {
@@ -26,8 +26,6 @@ const Main = (): JSX.Element => {
 			getDataFromServer()
 			initiateSocket()
 		}
-		if(!isJwtTokenValid())
-			localStorage.removeItem('token')
 
 	}, [])
 
